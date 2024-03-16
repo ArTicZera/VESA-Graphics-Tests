@@ -26,6 +26,7 @@ bootmain:
         
         int     0x13
 
+        ;Jumps to our kernel
         jmp     0x0000:KERNELLOCAL
 
 times 510 - ($ - $$) db 0x00

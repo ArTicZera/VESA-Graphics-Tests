@@ -1,8 +1,33 @@
 [BITS    16]
 
 ;Common modes:
-;  640x480  8bpp  -> bx = 0x4101
-;  1024x768 16bpp -> bx = 0x4117 
+;  320x200   15bpp -> bx = 0x410D
+;  320x200   16bpp -> bx = 0x410E
+;  320x200   24bpp -> bx = 0x410F
+;  640x400   8bpp  -> bx = 0x4100
+;  640x480   8bpp  -> bx = 0x4101
+;  640x480   15bpp -> bx = 0x4110
+;  640x480   16bpp -> bx = 0x4111
+;  640x480   24bpp -> bx = 0x4112
+;  800x600   4bpp  -> bx = 0x4102
+;  800x600   8bpp  -> bx = 0x4103
+;  800x600   15bpp -> bx = 0x4113
+;  800x600   16bpp -> bx = 0x4114
+;  800x600   24bpp -> bx = 0x4115
+;  1024x768  4bpp  -> bx = 0x4104
+;  1024x768  8bpp  -> bx = 0x4105
+;  1024x768  15bpp -> bx = 0x4116
+;  1024x768  16bpp -> bx = 0x4117
+;  1024x768  24bpp -> bx = 0x4118
+;  1280x1024 4bpp  -> bx = 0x4106
+;  1280x1024 8bpp  -> bx = 0x4107
+;  1280x1024 15bpp -> bx = 0x4119
+;  1280x1024 16bpp -> bx = 0x411A
+;  1280x1024 24bpp -> bx = 0x411B
+;  1600x1200 8bpp  -> bx = 0x411C
+;  1600x1200 15bpp -> bx = 0x411D
+;  1600x1200 16bpp -> bx = 0x411E
+;  1600x1200 24bpp -> bx = 0x411F
 
 %define VIDEOMODE 0x4101
 

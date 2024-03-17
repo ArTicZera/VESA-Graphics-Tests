@@ -79,6 +79,27 @@ VESAError:
 
         jmp     $
 
+VESADebug:
+        mov     ax, [XResolution]
+        call    printdec
+
+        mov     ah, 0x0E
+        mov     al, 0x20
+        int     0x10
+
+        mov     ax, [YResolution]
+        call    printdec
+
+        mov     ah, 0x0E
+        mov     al, 0x20
+        int     0x10
+
+        xor     ax, ax
+        mov     al, [BitsPerPixel]
+        call    printdec
+
+        jmp     $
+
 VBEModeInfo:
         ModeAttributes:      dw 0
         WinAAttributes:      db 0
